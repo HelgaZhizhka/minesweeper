@@ -1,0 +1,25 @@
+.button {
+  padding: 3px 10px;
+  height: 30px;
+  background: var(--gray);
+  box-shadow: inset -1px -1px 0px #0a0a0a, inset 1px 1px 0px #ffffff,
+    inset -2px -2px 0px #808080, inset 2px 2px 0px #dfdfdf;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-text);
+  &:active {
+    box-shadow: inset -1px -1px 0px #ffffff, inset 1px 1px 0px #0a0a0a,
+      inset -2px -2px 0px #dfdfdf, inset 2px 2px 0px #808080;
+  }
+  &:disabled {
+    pointer-events: none;
+    opacity: .56;
+  }
+}
+@media (hover: hover) {
+  button {
+    &:hover {
+      cursor: url('../images/icons/pointer-cursor.svg'), pointer;
+    }
+  }
+}

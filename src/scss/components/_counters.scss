@@ -1,0 +1,11 @@
+.counters {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin: 0 3px;
+  }
+  &__title {
+    display: block;
+    font-size: toRem(14px);
+  }
+}

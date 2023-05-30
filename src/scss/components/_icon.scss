@@ -1,0 +1,44 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &_computer, &_bin, &_ie, &_danger, &_warning {
+    width: 32px;
+    height: 32px;
+  }
+  &_mine, &_close, &_sound {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+  }
+  &_mine {
+    background-image: url('../images/icons/mine.svg');
+  }
+  &_sound {
+    background-image: url('../images/icons/sound.svg');
+  }
+  &_computer {
+    background-image: url('../images/icons/computer.svg');
+  }
+  &_bin {
+    background-image: url('../images/icons/bin.svg');
+  }
+  &_ie {
+    background-image: url('../images/icons/ie.svg');
+  }
+  &_close {
+    background-image: url('../images/icons/close.svg');
+  }
+  &_danger {
+    background-image: url('../images/icons/danger.svg');
+  }
+  &_warning {
+    background-image: url('../images/icons/warning.svg');
+  }
+  &_windows {
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/icons/windows.svg');
+  }
+}

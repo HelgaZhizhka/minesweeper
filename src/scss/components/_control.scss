@@ -1,0 +1,23 @@
+.control {
+  line-height: 0;
+  border: 0;
+  padding: 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  user-select: none;
+  &:active {
+     box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0px #0a0a0a,
+      inset -2px -2px 0px #dfdfdf;
+  }
+  &.is-start {
+    background-image: url(../images/icons/start.svg);
+  }
+  &.is-lose {
+    background-image: url(../images/icons/lose.svg);
+  }
+  &.is-win {
+    background-image: url(../images/icons/win.svg);
+  }
+}
+

@@ -1,0 +1,32 @@
+.slider {
+  appearance: none;
+  height: 3px;
+  width: 100px;
+  margin: 0 5px;
+  background: #000000;
+  box-shadow: 0px 1px 0px #ffffff, inset 1px 1px 0px #b8b8b8,
+    inset -1px -1px 0px #757575, inset 0px 1px 0px #9f9f9f;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-thumb {
+    appearance: none;
+    height: 20px;
+    width: 10px;
+    cursor: ew-resize;
+    background-image: url(../images/icons/slider-thumb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  &__label {
+    display: block;
+    text-align: center;
+  }
+}

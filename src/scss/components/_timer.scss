@@ -1,0 +1,53 @@
+.timer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 3px;
+  height: 40px;
+  background: #000000;
+  box-shadow: inset -0.541667px -0.541667px 0px #ffffff,
+    inset 0.541667px 0.541667px 0px #0a0a0a,
+    inset -1.08333px -1.08333px 0px #dfdfdf,
+    inset 1.08333px 1.08333px 0px #808080;
+  font-size: 30px;
+  line-height: 38px;
+  color: var(--color-red);
+  &__digit {
+    display: block;
+    width: 18px;
+    height: 36px;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.d-0 {
+      background-image: url(../images/timer/0.svg);
+    }
+    &.d-1 {
+      background-image: url(../images/timer/1.svg);
+    }
+    &.d-2 {
+      background-image: url(../images/timer/2.svg);
+    }
+    &.d-3 {
+      background-image: url(../images/timer/3.svg);
+    }
+    &.d-4 {
+      background-image: url(../images/timer/4.svg);
+    }
+    &.d-5 {
+      background-image: url(../images/timer/5.svg);
+    }
+    &.d-6 {
+      background-image: url(../images/timer/6.svg);
+    }
+    &.d-7 {
+      background-image: url(../images/timer/7.svg);
+    }
+    &.d-8 {
+      background-image: url(../images/timer/8.svg);
+    }
+    &.d-9 {
+      background-image: url(../images/timer/9.svg);
+    }
+  }
+}

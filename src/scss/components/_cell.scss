@@ -1,0 +1,118 @@
+.cell {
+  padding: 3px;
+  text-align: center;
+  line-height: 1;
+  user-select: none;
+  background-color: #c0c0c0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  text-indent: -9999px;
+  box-shadow: inset -1px -1px 0px #0a0a0a, inset 1px 1px 0px #ffffff,
+    inset -2px -2px 0px #808080;
+  &.is-open {
+    box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0px #0a0a0a,
+      inset -2px -2px 0px #dfdfdf;
+  }
+  &.is-mine {
+    padding: 3px;
+    background-image: url(../images/icons/mine.svg);
+    outline: 1px dashed #000000;
+    outline-offset: -2px;
+    &.is-active-mine {
+      background-color: var(--color-red);
+    }
+  }
+  &.is-flagged {
+    background-image: url(../images/icons/flag.svg);
+    outline: 1px dashed #000000;
+    outline-offset: -2px;
+  }
+  &.is-flagged-mine {
+    background-color: rgba(252, 13, 27, 0.56);
+  }
+  &[data-number='1'] {
+    padding: 3px;
+    color: #0b24fb;
+    background-image: url(../images/icons/1.svg);
+  }
+  &[data-number='2'] {
+    color: #0e7a11;
+    background-image: url(../images/icons/2.svg);
+  }
+  &[data-number='3'] {
+    color: #fc0d1b;
+    background-image: url(../images/icons/3.svg);
+  }
+  &[data-number='4'] {
+    color: #020b79;
+    background-image: url(../images/icons/4.svg);
+  }
+  &[data-number='5'] {
+    color: #852123;
+    background-image: url(../images/icons/5.svg);
+  }
+  &[data-number='6'] {
+    color: #278786;
+    background-image: url(../images/icons/6.svg);
+  }
+  &[data-number='7'] {
+    color: #000;
+    background-image: url(../images/icons/7.svg);
+  }
+  &[data-number='8'] {
+    color: #878787;
+    background-image: url(../images/icons/8.svg);
+  }
+}
+.row_25 .cell {
+  width: 3vw;
+  height: 3vw;
+}
+
+.row_10 .cell,
+.row_15 .cell {
+  width: 3.5vmax;
+  height: 3.5vmax;
+  font-size: 3vmax;
+}
+@include create-mq($grid__bp-md, 'min') {
+  .cell {
+    padding: 5px;
+    &[data-number='1'] {
+      padding: 8px;
+    }
+  }
+}
+@include create-mq($grid__bp-lg, 'min') {
+  .row_10 .cell,
+  .row_15 .cell {
+    width: 2vw;
+    height: 2vw;
+    font-size: 1.8vw;
+  }
+  .row_25 .cell {
+    width: 1.5vw;
+    height: 1.5vw;
+    font-size: 1.25vw;
+  }
+}
+@include create-mq($grid__bp-xl, 'min') {
+  .row_10 .cell,
+  .row_15 .cell {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+  }
+  .row_25 .cell {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+  }
+}
+.dark-theme {
+  .cell {
+    background-color: #000;
+  }
+}

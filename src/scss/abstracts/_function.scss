@@ -1,0 +1,7 @@
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+@function toRem($value) {
+    $remValue: calc(($value / $fontsize)) + rem; 
+    @return $remValue;
+}

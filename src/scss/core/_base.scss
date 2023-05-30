@@ -1,0 +1,27 @@
+:root {
+  --color-brand: #008080;
+  --color-red: #fc0d1b;
+  --color-white: #ffffff;
+  --light-color: #f9f7fe;
+  --color-text: #222222;
+  --gray: #c0c0c0;
+  --gray-light: #b8c0c1;
+  --box-shadow: inset -1px -1px 0px #0a0a0a, inset 1px 1px 0px #ffffff,
+    inset -2px -2px 0px #808080, inset 2px 2px 0px #dfdfdf;
+}
+body {
+  background-color: var(--color-brand);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+  color: var(--color-text);
+}
+
+.dark-theme {
+  --color-black: #000000;
+  --dark-color: #1a1a1a;
+  --color-text: #ffffff;
+  --light-color: #353436;
+  --gray: #555555;
+  --gray-light: #777777;
+}

@@ -1,0 +1,54 @@
+{
+  "name": "minesweeper*",
+  "version": "1.0.0",
+  "description": "minesweeper* game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "dev": "webpack --mode=development",
+    "production": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "server": "webpack serve",
+    "lint:sass": "sass-lint -v -q",
+    "lint:js": "eslint --ext .js src/js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/helgazhizhka-JSFE2023Q1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/helgazhizhka-JSFE2023Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/helgazhizhka-JSFE2023Q1#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@webpack-cli/generators": "^3.0.4",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "html-webpack-plugin": "^5.5.1",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.62.1",
+    "sass-lint": "^1.13.1",
+    "sass-loader": "^13.2.2",
+    "terser-webpack-plugin": "^5.3.8",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}
